@@ -1,0 +1,592 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="A bot that oversees an excel file with a Magic: the Gathering decklist and completes the price column for each individual card, taking the price from cardmarket.com" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2204,3615" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="decklistDataTable" />
+      <Variable x:TypeArguments="x:String" Name="searchResults" />
+      <Variable x:TypeArguments="x:String" Name="cardPrice" />
+      <Variable x:TypeArguments="x:Int32" Name="index">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEach`1_1</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="DecimalCardPrice" />
+      <Variable x:TypeArguments="x:Double" Name="DeckTotalCost" />
+      <Variable x:TypeArguments="x:Int32" Name="MissingCards" />
+      <Variable x:TypeArguments="x:String" Name="ExcelPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="2204,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[ExcelPath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\Users\haira\Desktop\SysEngProject\CardList.xlsx</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[decklistDataTable]" DisplayName="Open Excel file with Magic: the Gathering decklist" sap:VirtualizedContainerService.HintSize="2204,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Decklist" WorkbookPath="[ExcelPath]">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <Assign sap:VirtualizedContainerService.HintSize="2204,115" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Double">[DeckTotalCost]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Double">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="2204,115" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[MissingCards]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="[index]" DisplayName="For each card in the decklist" sap:VirtualizedContainerService.HintSize="2204,2809" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[decklistDataTable.Rows]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentCard" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="2202,2678" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard DisplayName="Navigate to cardmarket.com and search for the card name" sap:VirtualizedContainerService.HintSize="2168,2618" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1286c5ef-894a-4151-90fb-432f21ef93e2">
+              <uix:NApplicationCard.AutoGenerationOptions>
+                <uix:GenerationOptions Prompt="{x:Null}" Url="https://www.cardmarket.com/en/Magic">
+                  <uix:GenerationOptions.ExpectedInputs>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>currentCard["CardName"]</x:String>
+                    </scg:List>
+                  </uix:GenerationOptions.ExpectedInputs>
+                  <uix:GenerationOptions.ExpectedOutputs>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>searchResults</x:String>
+                    </scg:List>
+                  </uix:GenerationOptions.ExpectedOutputs>
+                </uix:GenerationOptions>
+              </uix:NApplicationCard.AutoGenerationOptions>
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="2134,2377" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="row" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input the name in the search fieald" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="2100,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" Text="[currentCard(&quot;Card Name&quot;).ToString()]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic" CVScreenId="8720f0ab-427d-449d-bf9e-285f843cee6c" ContentHash="VbtquX_luEaxkZzhq5WQWQ" CvElementArea="179, 425, 594, 33" CvType="InputBox" DesignTimeRectangle="182, 470, 592, 33" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProductSearchInput' tag='INPUT' type='text' class='form-control autocomplete-input' placeholder='Search Cardmarket...' aaname='' /&gt;" Guid="f2b6e295-ab71-405a-b952-598f9a8853b0" InformativeScreenshot="0494cb18a506a0eab7081b2e14108c70.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/Q-wd89yBVkqp-CWxL_OktA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cardmarket: Buy and Sell Magic: The Gathering Cards Online' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Press enter to search" sap:VirtualizedContainerService.HintSize="2100,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                    <Delay Duration="00:00:00.0030000" sap:VirtualizedContainerService.HintSize="2100,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NCheckState DisplayName="Card Price Logic" sap:VirtualizedContainerService.HintSize="2100,889" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" Timeout="2" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1040,638" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1006,576" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheckState DisplayName="Check App State 'Sorry, no matches for y…'" sap:VirtualizedContainerService.HintSize="972,489" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" Timeout="2" Version="V4">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,170" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[cardPrice]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">Not Found</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Card Price List" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" TextString="[cardPrice]" Version="V4">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic/Products/Search" CVScreenId="3a1029a8-ffb6-4b52-83a3-de1cb5db566d" ContentHash="CwQx-gvHJUqiI9KAqrthaQ" CvTextArea="791, 676, 39, 14" CvType="AnyWordGroup" DesignTimeRectangle="753, 671, 84, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='productRow717459' tag='DIV' type='' class='col-price pe-sm-2' /&gt;" Guid="bf8d2f7b-466d-40d2-8096-a47b6c359360" InformativeScreenshot="5706860f6a6e0a1c90b0bbf3d1c563fe.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/BkaR55Vawk-uvO_Ydl-9BQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search Results | Cardmarket: Europe&amp;apos;s Online TCG Marketplace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="3a1029a8-ffb6-4b52-83a3-de1cb5db566d" CvTextArea="798, 645, 31, 12" CvTextArgument="From" CvType="Text" DesignTimeRectangle="752, 635, 84, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='From' tag='DIV' type='' class='col-price pe-sm-2' check:innerText='From' /&gt;" Guid="ad29f158-332e-48eb-90e7-8228c563f695" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
+                                <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic/Products/Search" CVScreenId="49f03cd6-2192-478c-93fb-3fd9361f50c8" ContentHash="5AUvq-3y70ui258f3MaUmA" CvTextArea="315, 625, 343, 24" CvTextArgument="Sorry, no matches for your query" CvType="Text" DesignTimeRectangle="138, 579, 699, 110" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='P' type='' class='noResults text-center h3 text-muted h-100 d-flex align-items-center justify-content-center py-5' aaname='Sorry, no matches for your query' check:innerText='Sorry, no matches for your query' /&gt;" Guid="77bb5e3b-c144-4c26-beb2-4056bad5b0fd" InformativeScreenshot="143cfdff792eed74b305c03bc1395b20.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/dOMVNP2udkqY3sdQlTrEgw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search Results | Cardmarket: Europe&amp;apos;s Online TCG Marketplace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="49f03cd6-2192-478c-93fb-3fd9361f50c8" CvTextArea="315, 624, 343, 25" CvTextArgument="Sorry, no matches for your query" CvType="Text" DesignTimeRectangle="315, 624, 344, 25" ElementType="Text" Guid="d74c7097-a402-4642-b480-46e99b9e8b7f" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                          </Sequence>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1006,551" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NCheckState DisplayName="Check App State 'Info.'" sap:VirtualizedContainerService.HintSize="972,489" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" Timeout="2" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Card Price single card" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="1286c5ef-894a-4151-90fb-432f21ef93e2" TextString="[cardPrice]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic/Products/Singles/Bloomburrow/Otterball-Antics" CVScreenId="acbc91b4-d924-49aa-8688-96f94677851d" ContentHash="vCsSBkaxL0y-yxw9hi2_xw" CvTextArea="593, 513, 34, 14" CvTextArgument="0,02 €" CvType="Text" DesignTimeRectangle="588, 512, 211, 18" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='col-6 col-xl-7' aaname='0,02 €' check:innerText='0,02 €' /&gt;" Guid="07bf5c0f-bddd-45c9-8453-14cef7a5f156" InformativeScreenshot="6136368692f0fb726f698bd35907c4f1.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/GXrlzX2OI06_pxUpIP4yQA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Otterball Antics (BLB) - MTG Singles | Cardmarket' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="acbc91b4-d924-49aa-8688-96f94677851d" CvTextArea="376, 513, 31, 12" CvTextArgument="From" CvType="Text" DesignTimeRectangle="377, 512, 211, 25" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='col-6 col-xl-5' aaname='From' check:innerText='From' /&gt;" Guid="e99bd610-dd71-4dcc-ae50-2a03acb7fce4" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="468,170" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[cardPrice]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">Not Found</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic/Products/Singles/Bloomburrow/Otterball-Antics" CVScreenId="dd2f9c28-e262-4d5f-889d-0f60494e412b" ContentHash="vUsu3T2Twkm6_hTz69QtZg" CvElementArea="127, 384, 350, 34" CvTextArea="299, 394, 27, 12" CvTextArgument="Info." CvType="Button" DesignTimeRectangle="130, 384, 346, 34" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='tab' tag='A' type='' class='nav-link active show' aaname='Info.' check:innerText='Info.' /&gt;" Guid="09e475c4-f7d2-4166-93e5-dc197588c0ce" InformativeScreenshot="005fa2b873bf83c789c959a0b01c5a3a.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/LaKq37i7cUSAcBFqolbPzg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Otterball Antics (BLB) - MTG Singles | Cardmarket' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="dd2f9c28-e262-4d5f-889d-0f60494e412b" CvElementArea="127, 384, 350, 34" CvTextArea="299, 394, 27, 12" CvTextArgument="Info." CvType="Button" DesignTimeRectangle="300, 392, 25, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Info.' parentid='tabs' tag='SPAN' type='' class='' check:innerText='Info.' /&gt;" Guid="438794aa-fee8-4f57-8f57-dd39b50a3cad" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="cardmarket.com/en/Magic/Products/Search" CVScreenId="35413828-b927-491a-a9e0-50fb6e9add30" ContentHash="FHgYmc84F0ybqaPzYlpGnw" CvTextArea="310, 305, 249, 32" CvType="AnyWordGroup" DesignTimeRectangle="312, 298, 1297, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='H1_PageTitle page-header' /&gt;" Guid="499dd31f-1f16-4329-9183-bcbde5205c68" InformativeScreenshot="c211fa9d33a2b532bd4b2123ab11d770.png" Reference="Z7E4dtN1OEGvS57G29G0AQ/mSACWZkFmkqUBizCeeSmzg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Search Results | Cardmarket: Europe&amp;apos;s Online TCG Marketplace' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="35413828-b927-491a-a9e0-50fb6e9add30" CvTextArea="563, 270, 87, 13" CvTextArgument="Search Results" CvType="Text" DesignTimeRectangle="564, 267, 85, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Search Results' tag='SPAN' type='' class='' check:innerText='Search Results' /&gt;" Guid="27874919-b938-461f-a264-4e2ae10667ff" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <If Condition="[cardPrice = &quot;Not Found&quot;]" sap:VirtualizedContainerService.HintSize="2100,471" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[MissingCards]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[MissingCards + 1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="Compute Deck Cost" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Double">[DeckTotalCost]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Double">[DeckTotalCost + CDbl(cardPrice.Replace("€", "").Replace("$", "").Replace(",",".").Trim)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <WriteLine DisplayName="Print Price for Debug" sap:VirtualizedContainerService.HintSize="2100,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Concat(currentCard(&quot;Card Name&quot;).ToString(), &quot; &quot;, cardPrice)]" />
+                    <ui:WriteCell WorkbookPathResource="{x:Null}" Cell="[&quot;B&quot; + (index+2).ToString]" DisplayName="Update Card Price " sap:VirtualizedContainerService.HintSize="2100,141" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Decklist" Text="[cardPrice]" WorkbookPath="[ExcelPath]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="3, 10, 974, 1039" BrowserType="Edge" ContentHash="bmPV-3icQkS97jslAYJvYQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWUSURBVHhe7Z29axRBGMaTytoyTUAE0+UfsLCx8F8QrEUhWtipWAg22mlnYanYCDaikEosUggWFlaCEaxErQQFi/P9XfYNe5PZvc3Nx87szANPkcvufDy/nY+92+PWVtH6qavr4m3xjvi5eK9Q03cyIIv1Jp6wkoo2xPfFX8Sz6rnJgkw2mpjCSCrYEu+KbY2oPshmq4nLr6Rgrnxr+GubV4q0LQsxGfkdCVIgcz5DbKEyGnHizLXZ5tnbs9Pn7hRl+kzfO0CQlb81QQpj6jky55+/9HD25u2n2ef977P9bz+LMn2m72Rg5iImK39TkRTGSn9YAdSp+Mev37PSRQZkYRkJO0187pLCFqYfht6L1x+aJlSRBZm0MxLfb+JzkxTE/M9+97Bw5j+GYNWByIJM2hmJycx9HaCQprB5wQy1CmBRCsCYhiqAWCoGwJ+//6J6qCYPgDAeP3s3323E8sXrT+Z1DgExeQDst09u35jXHdPsbO4+etW0oluTB8CVqPXHtPb1/cevTUvsmjwAAuD23+hgFA+555k8AEQIlk4GdwXQEmtB7JFQARgCwvaFe9EgVAAWsSYAQdsU0hVAh4BAO7RdoVwBWKQ3ZtwbaLtCuQIwFDN8XAG01A7f6GwwVwCNxggfVwCNxggfVwCiscLHxQMYM3xcNICxw8fFAkghfFwcgLF2O10uCkBq4eNiAKQYPi4CQKrh4yIApBo+njyAlMPHkwaQevh4sgBSCZ822F5XTxJAKuFfvvX08EsWXW2ZHICUwtcvmNAXINiOmxQA/Rw3pfBVfO3IBmFSALj6tZyxzEO3XV+tAgL/bx/PaGWa6lM2AHjQdcyrvy98Ff9nhBA8V/+Qc7IBoE85a1kxPSRIFXfmtBUPOScbAHTs5oOX8ytLy4vh44S/irIBgGJDCB0+ygoAAgLrQWgItt1OCGUHACmEUPcEscJHyQMgbJt4PcSNmY/wOb+r3aaSBcC+mquceZhQ2FWYnfINwTV8zqXNPH3NjRk3YctAJAmAjuidJedgQqZztg75gOC64HIuACmr3eYs74S77npZeLsg0FFLRwbZZ/ht0xbK7lOSAAi5K0jfEEKFjycJAPdBYK0Y+l2w0OEzBdGePmUJALtCiBE+U+kyZQsAL4PQ9YW8VMJHWQPAfRD4DIHdFMdwLMEQXCrho+wB4D4IBMZoYIEGiO2YofIdPsoGACFzNdPJ9uvt/3dB8KEQ4aOsAHAV8z+dUkzzOiH4hhAqfJQVAKYSwu2D4BKGTSHDR9kBQH0QOI/dD8G5KnT4KEsAqAuC1sGbeS6KET7KFgBqQ+B4Nft8l3UgVvgoawBIITDtUDbBuVz9McNH2QNQERzB53LlqyYDwFVjhI8qANFY4aPiATBljRU+KhoA4Xc9ZxQjfFQsgBTCR0UC0K3r2OGjIgFQDiG3y8exw0dFAmDRNcvHscNHRQLgrQqzfP7mbnpZ23yrSAC28tV86OP6Rt5xVCQAPprse2oiJoQiASB9iKtdh5q6gbCsnT6UFQAWSK5MzncxZWDKs+2GMPWzJjBaQor2ZAEAExbn+zRgzXrUtMH1GaJlygqAluHTtjra9j31mUoSAFODnpOCQ94bJAmA+bnrscKYpn6mvZDrQJIAEMNeIYxl2swbdi6fsi1TsgAQxzH8CWFV87bDKuZctqohF2CUNIASVAGMrKgAcAWwKAXQzkjsBwCSguoPOveILCw3g35+0BlJYfUnzTtEBmRhTD/Y60+a1x/1N0yf6TsZmLmIvf+oP+vAwjSEoc7QY/7jreGSTJ/pu+XKx2TlZ/5XSYEb4t2mggXTiBJty0JMRhtNbH4lBTMVWSFUz002/qYem6QCRgJD7MiaULDJgkzCXPmmpCLWhG0xuyP2u3uFmr6TAVmsMOevrf0HOsSe+MAocs8AAAAASUVORK5CYII=" InformativeScreenshot="491302235d9b11ed807193958aca2c26.jpg" Reference="Z7E4dtN1OEGvS57G29G0AQ/PzZsLTtABk2VIqfUrdzRww" Selector="&lt;html app='msedge.exe' title='Cardmarket: Buy and Sell Magic: The Gathering Cards Online' /&gt;" Title="Cardmarket: Buy and Sell Magic: The Gathering Cards Online" Url="https://www.cardmarket.com/en/Magic" Version="V1" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <ui:WriteCell WorkbookPathResource="{x:Null}" Cell="D2" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="2204,148" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Decklist" Text="[DeckTotalCost.ToString]" WorkbookPath="[ExcelPath]" />
+    <ui:WriteCell WorkbookPathResource="{x:Null}" Cell="F2" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="2204,139" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Decklist" Text="[MissingCards.ToString]" WorkbookPath="[ExcelPath]" />
+  </Sequence>
+</Activity>
