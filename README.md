@@ -1,0 +1,1 @@
+# Web-Scraping-App-for-Magic-The-Gathering-Card-Pricing
